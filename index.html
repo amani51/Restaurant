@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/res-icon.ico" type="image/icon type">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="./images/res.png" alt="" class="header-logo">
+       <nav class="header-nav">
+        <a href="index.html" class="nav-item">MENU</a>
+        <a href="" class="nav-item">ABOUT</a>
+        <a href="" class="nav-item">LOCATIONS</a>
+        <a href="" class="nav-item">ORDER ONLINE</a>
+      </nav>
+    </header>
+    <main>
+        <form id="form">
+            <label for="foodName"> Food Name</label>
+            <input type="text" id="name" placeholder="Pizza/Apple/Mansaf..">
+            <br>
+            <br>
+            <label for="typeSelect">Food Types</label>
+            <select name="restaurant" id="options">
+                <option value="">-Please choose an option-</option>
+                <option value="Fruit and vegetables">Fruit and vegetables</option>
+                <option value="Starchy food">Starchy food</option>
+                <option value="Dairy">Dairy</option>
+                <option value="Protein">Protein</option>
+                <option value="Fat">Fat</option>
+            </select>
+            <br>
+            <br>
+            <label for="FoodPrice" placeholder="IN JD"> Price JD </label>
+            <input type="text" id="price" placeholder="IN JD">
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+
+        </form>
+        <table id="foodTable">
+        </table>
+        <script src="app.js"></script>
+    </main>
+    <footer>
+        <div class="footer">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+            <a href="#" class="fa fa-snapchat-ghost"></a>
+            <p class="copy-right">&copy; Chef's Choice 2022</p>
+          </div>
+    </footer>
+</body>
+</html>
