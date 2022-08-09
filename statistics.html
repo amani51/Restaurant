@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Statistics</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="images/res-icon.ico" type="image/icon type">  
+    <link rel="icon" href="./images/res-icon.ico" type="image/icon type">  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <img src="/images/res.png" alt="" class="header-logo">
+        <img src="./images/res.png" alt="" class="header-logo">
        <nav class="header-nav">
         <a href="./index.html" class="nav-item">MENU</a>
         <a href="./statistics.html" class="nav-item">STATISTICS</a>
@@ -24,31 +24,11 @@
       </nav>
     </header>
     <main>
-        <form id="form">
-            <label for="foodName"> Food Name</label>
-            <input type="text" id="name" placeholder="Pizza,Apple..">
-            <br>
-            <br>
-            <label for="typeSelect">Food Types</label>
-            <select name="restaurant" id="options">
-                <option value="">-Please choose an option-</option>
-                <option value="Fruit and vegetables">Fruit and vegetables</option>
-                <option value="Starchy food">Starchy food</option>
-                <option value="Dairy">Dairy</option>
-                <option value="Protein">Protein</option>
-                <option value="Fat">Fat</option>
-            </select>
-            <br>
-            <br>
-            <label for="FoodPrice" placeholder="IN JD"> Price JD </label>
-            <input type="text" id="price" placeholder="IN JD">
-            <br>
-            <br>
-            <button type="submit">Submit</button>
-
-        </form>
-        <script src="app.js"></script>
-        
+       
+        <table id="foodTable">
+        </table>
+        <script src="statistics.js"></script>
+        <!-- <script src="app.js"></script> -->
     </main>
     <footer>
         <div class="footer">
