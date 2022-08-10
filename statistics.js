@@ -55,6 +55,7 @@ Order.prototype.render=function(){
 function getData() { 
     let retrievedData = localStorage.getItem("form");
     let arrayData = JSON.parse(retrievedData);
+    console.log(arrayData)
     if (arrayData != null) {
         for (let i = 0; i < arrayData.length; i++) {
           let foodId=Order.foodId;
@@ -62,16 +63,16 @@ function getData() {
             foodId,
             arrayData[i].foodName,
             arrayData[i].type,
-            arrayData[i].price
-            
+            arrayData[i].price  
           );
-          newOrder.uniqueID(id);
-            newOrder.render()
+            newOrder.uniqueID(id);
+            // newOrder.render()
         }
-
+        for (let i = 0; i < allOrder.length; i++) {
+            allOrder[i].render()
+            
+        }
     }
-
-}
-
+  }
 
 getData()
